@@ -1,0 +1,68 @@
+body {
+	margin:0px 0px 0px 0px;
+}
+#chatlist {
+	float:left;
+	background : #000000; 
+	color : #ffffff; 
+	padding : 4px; 
+	height : 450px; 
+	overflow : auto;
+	width:67%;
+	border-right:2px solid #000;
+	border-bottom:2px solid #000;
+	margin-right:15px;
+	padding-bottom:20px;
+}
+.listname {
+}
+.listicon {
+}
+#newpostbox {
+	float:none;
+}
+#listofchatters {
+	float:none;
+}
+#controlbox {
+	float: none;
+	border: 1px solid gray;
+}
+.container {
+   text-align: center;
+   border: 1px solid #000000;
+   width: 300px;
+}
+td {
+   text-align: left;
+}
+
+.post {
+	float:none;
+}
+.postusericon {
+	float:none;
+}
+.postuserinfo {
+	float:none;
+	border: 1px solid white;
+}
+
+.postsignature {
+	float:none;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+.postuser {
+	float:none;
+
+}
+.postdate{
+	float:none;
+
+}
+.postmessage {
+	float:none;
+
+}
+

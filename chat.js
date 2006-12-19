@@ -4,6 +4,7 @@ function scrollDown(){
 	}
 
 function refresh(){
+	alert('refresh');
 	var url='newpostform.php';
 	var pars='';
 	var target='newpostbox';
@@ -16,7 +17,6 @@ function listposts(){
 	var target = 'chatlist';
 	var myAjax = new Ajax.Updater(target, url, {method: 'get', parameters: pars});
 	listusers();
-	refresh();
 }
 function savepost(user,post){
 	var url = 'savepost.php';

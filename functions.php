@@ -12,7 +12,6 @@ function chatlist(){
 	$postresults=mysql_query($postsearch);
 	$numposts=mysql_num_rows($postresults);
 	//$msg="<textarea rows=20 cols=50>";
-	print '<LINK REL=stylesheet HREF="main.css" TYPE="text/css">';
 	while ($row=mysql_fetch_array($postresults)){
 		$userinfo=userinfo($row['user_id']);
 		$msg.="<div class='post'>\n";

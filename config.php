@@ -1,4 +1,5 @@
 <?php
+
 //The following line calls the script loggedin.php
 //which checks to see whether or not we are logged 
 //in.  If we are, several variables will be defined.

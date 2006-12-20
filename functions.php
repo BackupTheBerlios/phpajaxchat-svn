@@ -8,23 +8,29 @@ function userinfo($id){
 }
 
 function chatlist(){
+	//Set The number of posts you want to see here in the variable $viewableposts
+	$viewableposts=10;
 	$postsearch = 'SELECT * FROM `chat_list` ORDER BY id ASC';
 	$postresults=mysql_query($postsearch);
 	$numposts=mysql_num_rows($postresults);
-	//$msg="<textarea rows=20 cols=50>";
+	$startingpost=$numposts-$viewableposts;
+	$x=0;
 	while ($row=mysql_fetch_array($postresults)){
-		$userinfo=userinfo($row['user_id']);
-		$msg.="<div class='post'>\n";
-		$msg.="<div class='postusericon'><img src='".$userinfo['icon']."'></div>\n";
-		$msg.="<div class='postuserinfo'>\n";
-		$msg.="<div class='postdate'>".$row['date_posted']."</div>\n";
-		$msg.="<div class='postuser'>".$userinfo['username']."</div>\n";
-		$msg.="<div class='postmessage'>".$row['message']."</div>\n";
-		$msg.="<div class='postsignature'>".$userinfo['signature']."</div>\n";
-		$msg.="</div>\n</div>\n";
-		$msg.=$message;
+		if($startingpost>0 && $x<$startingpost){
+		}else{
+			$userinfo=userinfo($row['user_id']);
+			$msg.="<div class='post'>\n";
+			$msg.="<div class='postusericon'><img src='".$userinfo['icon']."'></div>\n";
+			$msg.="<div class='postuserinfo'>\n";
+			$msg.="<div class='postdate'>".$row['date_posted']."</div>\n";
+			$msg.="<div class='postuser'>".$userinfo['username']."</div>\n";
+			$msg.="<div class='postmessage'>".$row['message']."</div>\n";
+			$msg.="<div class='postsignature'>".$userinfo['signature']."</div>\n";
+			$msg.="</div>\n</div>\n";
+			$msg.=$message;
+		}
+		$x++;
 	}
-	//$msg.="</textarea>";
 	$msg.="<p id='bottom'></p>";
 	return $msg;
 }

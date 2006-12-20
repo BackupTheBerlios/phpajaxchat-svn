@@ -28,7 +28,10 @@ if($status){
 	<div id="chatlist"><?php print chatlist();?></div>
 	<div id="listofchatters"><?php print listofchatters();?></div>
 	<div id="newpostbox"><?php print newpostbox($userid);?></div>
-	<div id="controlbox"><a href="logout.php">Logout</a></div>
+	<div id="controlbox"><p><a href="logout.php">Logout</a></p>
+<p><a href="config.php" title="Configuration Panel" target="_blank">Configuration</a></p>
+
+</div>
 <?
 //Otherwise, we're not logged in.  Include the login
 //page

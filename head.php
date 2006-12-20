@@ -7,4 +7,3 @@
 <script src="chat.js"></script>
 </head>
 <body onLoad="scrollDown();">
-

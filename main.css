@@ -32,6 +32,13 @@ body {
    border: 1px solid #000000;
    width: 300px;
 }
+.characterconfig {
+   text-align: center;
+   border-top: 1px solid #000000;
+   border-bottom: 1px solid #000000;
+   width: 300px;
+}
+
 td {
    text-align: left;
 }

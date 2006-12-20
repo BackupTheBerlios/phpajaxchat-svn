@@ -31,6 +31,12 @@ function listusers(){
 	var updateUsers=new Ajax.Updater(target,url,{method:'get',paramaters:pars});
 }
 
-var streamer=new PeriodicalExecuter(listposts,3);
-new Rico.Accordion( $('controlbox'), {panelHeight:300} );
+function saveconfig(iconpath){
+	var url='config.php';
+	var pars='config=1&iconpath='+escape(iconpath);
+	alert(pars);
+	var target='configurationPanel';
+	var updateConfig=new Ajax.Updater(target,url,{method:'get', parameters:pars});
+}
 
+var streamer=new PeriodicalExecuter(listposts,3);

@@ -23,7 +23,7 @@ include('head.php');
 //continue setting up the page.
 if($status){
 	// This is where you customize the index file for your chat.  Will, 
-	// you had the welcome to.... all way through changelog info here
+	// you had the "welcome to...." all way through "changelog info"  here
 ?>
 	<div id="chatlist"><?php print chatlist();?></div>
 	<div id="listofchatters"><?php print listofchatters();?></div>
@@ -39,12 +39,7 @@ if($status){
 			</div>
 		</div>
 		<div id="configurationPanel">
-			<div id="configurationPanelHeader">
-				Configuration
-			</div>
-			<div id="configurationPanelContent">
-			We will soon put the preferences stuff here.
-			</div>
+			<?php configform(); ?>
 		</div>
 	</div>
 <?

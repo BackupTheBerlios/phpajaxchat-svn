@@ -99,8 +99,8 @@ function registerForm(){
 }
 function configForm(){
 ?>
-<form action="config.php" method="post">
-<table class="container" align="center" cellspacing="0" cellpadding="0">
+<form action="" onSubmit="saveconfig(this.iconpath.value); return false;" method="post">
+<table class="characterconfig" align="center" cellspacing="0" cellpadding="0">
    <tr>
       <td colspan="2" style="text-align:center;"><h1>Character Configuration</h1></td>
    </tr>
@@ -110,9 +110,6 @@ function configForm(){
    </tr>
    <tr>
       <td colspan="2" style="text-align:center;"><input name="config" type="submit" value="Submit" /></td>
-   </tr>
-   <tr>
-      <td colspan="2" style="text-align:center;"><a href="index.php">Index</a></td>
    </tr>
 </table>
 </form>

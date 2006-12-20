@@ -4,7 +4,6 @@ function scrollDown(){
 	}
 
 function refresh(){
-	alert('refresh');
 	var url='newpostform.php';
 	var pars='';
 	var target='newpostbox';

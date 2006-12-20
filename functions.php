@@ -108,6 +108,11 @@ function configForm(){
       <td>Icon File Path:</td>
       <td><input type="text" name="iconpath" /></td>
    </tr>
+<tr>
+	<td>Click <a href="" title="filebrowser" onclick="popWindow('filebrowser.php');">here</a> to view files currently
+	on the system.
+	</td>
+</tr>
    <tr>
       <td colspan="2" style="text-align:center;"><input name="config" type="submit" value="Submit" /></td>
    </tr>

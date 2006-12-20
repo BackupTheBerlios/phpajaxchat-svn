@@ -1,6 +1,7 @@
 <?php
 require_once('loggedin.php');
 //continue setting up the page.
+include('head.php');
 if($status){
 
 	if(isset($_GET['config'])) {
@@ -20,5 +21,6 @@ if($status){
 	print "You are not logged in.";
 	include('loginform.php');
 }
+include('foot.php');
 ?>
 

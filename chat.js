@@ -40,3 +40,10 @@ function saveconfig(iconpath){
 }
 
 var streamer=new PeriodicalExecuter(listposts,3);
+
+var newwindow;
+function popWindow(url){
+	newwindow=window.open(url,'name','height=400,width=200');
+	if (window.focus) {newwindow.focus()}
+}
+

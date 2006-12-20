@@ -35,11 +35,11 @@ if($status){
 			</div>
 			<div id="functionsPanelContent">
 				<p><a href="logout.php">Logout</a></p>
-				<p><a href="config.php" title="Configuration Panel" target="_blank">Configuration</a></p>
+				<p><a href="#" onclick="popWindow('config.php');" title="Configuration Panel" target="_blank">Configuration</a></p>
 			</div>
 		</div>
 		<div id="configurationPanel">
-			<?php configform(); ?>
+			<?php /*configform();*/ ?>
 		</div>
 	</div>
 <?

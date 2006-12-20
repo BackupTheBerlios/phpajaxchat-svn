@@ -31,27 +31,6 @@ function listusers(){
 	var updateUsers=new Ajax.Updater(target,url,{method:'get',paramaters:pars});
 }
 
-//This next function show the new events box
-function showNewEventBox(whichLayer){
-	
-	if (document.getElementById){
-		// this is the way the standards work
-		var style2 = document.getElementById(whichLayer).style;
-		style2.display = style2.display? "":"block";
-		style2.visibility= style2.visibility?"":"visible";
-	}
-	else if (document.all){
-		// this is the way old msie versions work
-		var style2 = document.all[whichLayer].style;
-		style2.display = style2.display? "":"block";
-		style2.visibility= style2.visibility?"":"visible";
-	}
-	else if (document.layers){
-		// this is the way nn4 works
-		var style2 = document.layers[whichLayer].style;
-		style2.display = style2.display? "":"block";
-		style2.visibility= style2.visibility?"":"visible";
-	}
-}	
 var streamer=new PeriodicalExecuter(listposts,3);
+new Rico.Accordion( $('controlbox'), {panelHeight:300} );
 

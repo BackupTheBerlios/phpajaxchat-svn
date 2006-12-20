@@ -26,7 +26,6 @@ body {
 }
 #controlbox {
 	float: none;
-	border: 1px solid gray;
 }
 .container {
    text-align: center;

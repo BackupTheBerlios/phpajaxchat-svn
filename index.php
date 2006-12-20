@@ -28,10 +28,25 @@ if($status){
 	<div id="chatlist"><?php print chatlist();?></div>
 	<div id="listofchatters"><?php print listofchatters();?></div>
 	<div id="newpostbox"><?php print newpostbox($userid);?></div>
-	<div id="controlbox"><p><a href="logout.php">Logout</a></p>
-<p><a href="config.php" title="Configuration Panel" target="_blank">Configuration</a></p>
-
-</div>
+	<div id="controlbox">
+		<div id="functionsPanel">
+			<div id="functionsPanelHeader">
+				Functions
+			</div>
+			<div id="functionsPanelContent">
+				<p><a href="logout.php">Logout</a></p>
+				<p><a href="config.php" title="Configuration Panel" target="_blank">Configuration</a></p>
+			</div>
+		</div>
+		<div id="configurationPanel">
+			<div id="configurationPanelHeader">
+				Configuration
+			</div>
+			<div id="configurationPanelContent">
+			We will soon put the preferences stuff here.
+			</div>
+		</div>
+	</div>
 <?
 //Otherwise, we're not logged in.  Include the login
 //page

@@ -35,7 +35,7 @@ if($status){
 			</div>
 			<div id="functionsPanelContent">
 				<p><a href="logout.php">Logout</a></p>
-				<p><a href="#" onclick="popWindow('config.php');" title="Configuration Panel" target="_blank">Configuration</a></p>
+				<p><a href="#" onclick="popWindow('config.php');" title="Configuration Panel">Configuration</a></p>
 			</div>
 		</div>
 		<div id="configurationPanel">

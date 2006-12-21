@@ -9,7 +9,7 @@ function userinfo($id){
 
 function chatlist(){
 	//Set The number of posts you want to see here in the variable $viewableposts
-	$viewableposts=10;
+	$viewableposts=5;
 	$postsearch = 'SELECT * FROM `chat_list` ORDER BY id ASC';
 	$postresults=mysql_query($postsearch);
 	$numposts=mysql_num_rows($postresults);

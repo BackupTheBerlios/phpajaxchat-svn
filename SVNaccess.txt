@@ -1,6 +1,6 @@
 To checkout the code, do the following:
 
-1. Open Windows explorer to where you would like to checkout the code into, ie My Documents or something like that.
+1. Open Windows explorer an create a folder you would like to checkout the code into, ie My Documents or something like that.
 
 2. Right click, and select "SVN Checkout".  A window will
 pop up and you'll need to enter the following information in.
@@ -15,4 +15,4 @@ https://nilore@svn.berlios.de/svnroot/repos/phpajaxchat/
 5. The window will process for several seconds, and you will soon see it download all the code.  
 
 Each File controlled by SVN has a little icon on the bottom
-left hand corner.  This shows it's status.  A white 
+left hand corner.  This shows it's status.  A white checkmark on a green circle means the file is the same as the file on the server.  If a file or folder doesn't have an icon, that means that SVN isn't aware of it.  You need to add it to the repository.  Do this by right-clicking on it, selecting TortoiseSVN > Add.  This will add this file into the repository, not actually uploading it, but making the repository aware of it.  You need to then right click on the file and choose SVNCommit.

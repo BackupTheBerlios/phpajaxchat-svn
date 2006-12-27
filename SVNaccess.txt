@@ -1,0 +1,18 @@
+To checkout the code, do the following:
+
+1. Open Windows explorer to where you would like to checkout the code into, ie My Documents or something like that.
+
+2. Right click, and select "SVN Checkout".  A window will
+pop up and you'll need to enter the following information in.
+
+URL for checking out code:
+https://nilore@svn.berlios.de/svnroot/repos/phpajaxchat/
+
+3. Click enter
+
+4. You will be asked to accept the certificate for ......  Click on "Accept Permanently".
+
+5. The window will process for several seconds, and you will soon see it download all the code.  
+
+Each File controlled by SVN has a little icon on the bottom
+left hand corner.  This shows it's status.  A white 

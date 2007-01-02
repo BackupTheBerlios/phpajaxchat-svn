@@ -31,7 +31,9 @@ function savepost(user,post){
 
 var timer; 
 function idletimer(){
+	alert("Timer STarted");
 	timer = setTimeout("asktologout()",5000);
+
 }
 
 function stopper(){

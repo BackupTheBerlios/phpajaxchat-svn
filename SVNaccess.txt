@@ -1,5 +1,6 @@
 To checkout the code, do the following:
 
+Here is some change.
 1. Open Windows explorer an create a folder you would like to checkout the code into, ie My Documents or something like that.
 
 2. Right click, and select "SVN Checkout".  A window will

@@ -37,7 +37,7 @@ function idletimer(){
 }
 
 function stopper(){
-	clearTimeout(time);
+	clearTimeout(timer);
 }
 
 function asktologout() {

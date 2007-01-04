@@ -6,7 +6,7 @@ body {
 	background : #000000; 
 	color : #ffffff; 
 	padding : 4px; 
-	height : 450px; 
+	height : 75%; 
 	overflow : auto;
 	width:90%;
 	border-right:2px solid #000;
@@ -45,6 +45,7 @@ td {
 
 .post {
 	float:none;
+	border:1px solid white;
 }
 .postusericon {
 	float:none;
@@ -56,19 +57,21 @@ td {
 
 .postsignature {
 	float:none;
-	border-top:1px solid white;
-	border-bottom:1px solid white;
+	color:white;
 }
 .postuser {
 	float:none;
+	color:white;
 
 }
 .postdate{
-	float:none;
+	float:right;
+	color:white;
 
 }
 .postmessage {
 	float:none;
+	color:white;
 
 }
 

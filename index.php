@@ -27,21 +27,15 @@ if($status){
 ?>
 	<div id="chatlist"><?php print chatlist();?></div>
 	<div id="listofchatters"><?php print listofchatters();?></div>
-	<div id="newpostbox"><?php print newpostbox($userid);?></div>
+<center> <div id="newpostbox"> <?php print newpostbox($userid);?></div>
 	<div id="controlbox">
 		<div id="functionsPanel">
-			<div id="functionsPanelHeader">
-				Functions
-			</div>
-			<div id="functionsPanelContent">
-				<p><a href="logout.php">Logout</a></p>
-				<p><a href="#" onclick="popWindow('config.php');" title="Configuration Panel">Configuration</a></p>
-			</div>
+	<a href="#" onclick="popWindow('config.php');" title="Configuration Panel">Configuration</a> | <a href="logout.php">Logout</a>
 		</div>
 		<div id="configurationPanel">
 			<?php /*configform();*/ ?>
 		</div>
-	</div>
+	</div></center>
 <?
 //Otherwise, we're not logged in.  Include the login
 //page

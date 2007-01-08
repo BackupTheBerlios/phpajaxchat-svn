@@ -44,15 +44,14 @@ td {
 }
 
 .post {
+	valign:top;
 	float:none;
-	border:1px solid white;
 }
 .postusericon {
 	float:none;
 }
 .postuserinfo {
 	float:none;
-	border: 1px solid white;
 }
 
 .postsignature {
@@ -65,7 +64,7 @@ td {
 
 }
 .postdate{
-	float:right;
+	float:none;
 	color:white;
 
 }

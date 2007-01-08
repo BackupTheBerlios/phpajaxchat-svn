@@ -19,14 +19,14 @@ function chatlist(){
 		if($startingpost>0 && $x<$startingpost){
 		}else{
 			$userinfo=userinfo($row['user_id']);
-			$msg.="<div class='post'><table border=1 width=99%>\n";
-			$msg.="<tr><td rowspan=2 width=450><div class='postusericon'><img src='".$userinfo['icon']."'></div></td>\n";
+			$msg.="<div class='post'><table width=99%>\n";
+			$msg.="<tr><td width=450><div class='postusericon'><img src='".$userinfo['icon']."'></div></td>\n";
 			$msg.="<td><div class='postuserinfo'>\n";
-			$msg.="<div class='postuser'>".$userinfo['username']."</div>\n";
-			$msg.="<div class='postdate'>".$row['date_posted']."</div></td></tr>\n";
-			$msg.="<tr><td><div class='postmessage'>".$row['message']."</div>\n";
+			$msg.="<div class='postuser'>".$userinfo['username']."</div>";
+			$msg.="<div class='postdate'>(".$row['date_posted'].")</div><br>\n";
+			$msg.="<div class='postmessage'>".$row['message']."</div>\n";
 			$msg.="<div class='postsignature'>".$userinfo['signature']."</div>\n";
-			$msg.="</div>\n</td></tr></table></div><br>\n";
+			$msg.="</div>\n</td></tr></table></div><br><hr><br>\n";
 			$msg.=$message;
 		}
 		$x++;

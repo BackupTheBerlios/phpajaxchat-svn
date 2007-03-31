@@ -1,8 +1,8 @@
 <?php
 session_start();
 include('functions.php');
-require_once('connect2.php');
-if($_SESSION[$chatname.'_username']) {
+$session_name=$chatname."_username";
+if($_SESSION[$session_name]) {
 	$data = mysql_fetch_array(mysql_query('SELECT * FROM `chat_users` WHERE `username`="'.$_SESSION[$chatname.'_username'].'"'));
 	$status=true;
 	$username=$_SESSION[$chatname.'_username'];

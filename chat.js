@@ -44,7 +44,7 @@ function asktologout() {
 	var logoutWin=window.open('prompt.php','Logout?','height=200,width=400');
 	if (window.focus) {logoutWin.focus();}
 }
-idletimer();
+//idletimer();
 // End of timeout functions
 function listusers(){
 	var url='listusers.php';
